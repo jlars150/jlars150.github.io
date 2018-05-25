@@ -1,0 +1,174 @@
+
+  <link href="https://fonts.googleapis.com/css?family=Arvo|Open+Sans" rel="stylesheet">
+  /* Delete these CSS comments after reading. */
+  /* This main css file contains the default rules and is geared toward the small/phone view */
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 24px;
+  font-family: "Trebuchet MS", 'Helvetica', sans-serif;
+  text-align: center;
+}
+
+header, nav, main, footer {
+  max-width: 600px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+  display: block;
+}
+
+header {
+  background-color: lightblue;
+  color: white;
+  width: 100%;
+  height: 100px;
+}
+header h1 {
+  font-family: 'Tahoma', 'Geneva', sans-serif;
+  font-weight: 300;
+  font-size: 1.7rem;
+  color: white;
+  margin: auto;
+  padding: 0;
+  top: 15px;
+  left: 70px;
+}
+
+header .subheading, header h1, header img {
+
+}
+
+header img {
+  top: 20px;
+  left: 30px;
+  float:left
+}
+
+.bars {
+  display:block;    
+  position: relative;
+  top: -50px;
+  width: 30px;
+  height: 30px;
+  float: right;
+}
+
+header .subheading {
+  margin:auto;
+  font-size: 0.9rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.250rem;
+}
+nav {
+  background-color: lightblue;
+  width: 100%;
+}
+nav button {}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  text-align: center;
+}
+nav ul li a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+nav ul li.active a {
+  color: goldenrod;
+}
+nav ul li a:hover {
+  color: gainsboro;
+}
+
+main {
+}
+.full-width {
+  margin:auto;
+  width: 100%;
+  display: flex;
+}
+
+main h2 {
+}
+main figure {
+  margin: 0 0 .2rem 2%; width:96%;
+}
+main figure img {
+  display: hidden;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Arvo', 'times new roman', sans-serif;
+  font-weight: 300;
+  color: green;
+}
+.contact {
+  background-color: lightgray;
+  padding: 10px;
+}
+.footer-bar {
+  padding: 10px;
+  background-color: lightblue;
+}
+footer {
+  font-size: .8rem;
+}
+
+
+/* my css */
+.highlow p {
+  display: inline;
+  padding: 10px;
+}
+article {
+  text-align: left;
+}
+article img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+table {
+  margin: auto;
+}
+article h3 {
+  text-align: center;
+}
+
+section.forecast {
+  display: none;
+}
+.images {
+  width: 90%;
+}
+.weather-type {
+  font-size: 1.5rem;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 10px;
+}
+.current {
+  margin: auto;
+  display: table;
+}
+a {
+  color: lightblue;
+  text-decoration: none;
+}
