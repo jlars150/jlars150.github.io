@@ -14,7 +14,6 @@
   }
 
   * {
-    flex-flow: row wrap;
   }
 
   header, nav, main, footer {
@@ -39,13 +38,10 @@
   }
 
   header img {
-    position: relative;
-    top: 15;
-    left: 0;
     float: left;
   }
 
-  .fa-bars {
+  .bars {
     display: none;
     top: 60px;
     padding-right: 20px;
@@ -67,7 +63,7 @@
     font-size: 1.250rem;
   }
   nav {
-    background-color: #00487c;
+    background-color: lightblue;
     width: 100%;
   }
   nav button {}
@@ -83,20 +79,24 @@
   }
   nav ul li a {
     display: inline;
-    color: #ffffff;
+    color: white;
     padding: 8px 16px;
     text-decoration: none;
   }
   nav ul li.active a {
-    color: #ffd332;
+    color: darkcyan;
   }
   nav ul li a:hover {
-    color: #c0c0c0;
+    color: gainsboro;
   }
 
   main {
   }
-
+.full-width {
+  
+  width: 50%;
+  float:left;
+}
   main h2 {
   }
   main figure {
@@ -108,16 +108,11 @@
     display: table-cell;
   }
 
-  h2, h3, h4, h5, h6 {
-    font-family: 'Arvo', 'Times New Roman', serif;
-    font-weight: 300;
-    color: #00487c;
-  }
   .contact {
   }
   .footer-bar {
     padding: 10px;
-    background-color: #0080aa;
+    background-color: lightblue;
   }
   footer {
     clear: both;
