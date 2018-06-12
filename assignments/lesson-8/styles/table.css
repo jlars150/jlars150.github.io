@@ -1,0 +1,36 @@
+table {
+  font-family: 'Ubuntu', sans-serif;
+  border-collapse: collapse;
+  border: 2px solid rgb(200,200,200);
+}
+
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 8px 10px;
+}
+
+th {
+  background-color: #7fb9c2;
+  font-size: 25px;
+}
+
+tr {
+  background-color: #628ca6;  
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even) td {
+  background-color: #e7f0ed;
+}
+
+tr:nth-child(odd) td {
+  background-color: #e7ffed;
+}
+
+tfoot {
+  background-color: #7fb9c2;
+  font-size: 13px;
+}
