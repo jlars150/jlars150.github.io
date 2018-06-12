@@ -1,36 +1,68 @@
+html {
+    font-family: 'Ubuntu', sans-serif;
+}
+
 table {
-  font-family: 'Ubuntu', sans-serif;
-  border-collapse: collapse;
-  border: 2px solid rgb(200,200,200);
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-size: 1rem;
+    text-align: center
+}
+
+thead tr th {
+    background-color: #7fb9c2;
+    color: black;
+    font-size: 2rem;
+}
+
+
+.outlier, tr:first-child {
+    background-color: #628ca6;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#italics {
+    font-style: italic;
+}
+
+tr:last-child {
+    background-color: #7fb9c2;
+    font-size: .6rem;
+    color: black;
+    text-align: center;
+}
+
+tr:nth-child(3) {
+    background-color: #e7ffed;
+}
+
+tr:nth-child(5) {
+    background-color: #e7ffed;
+}
+
+tr:nth-child(7) {
+    background-color: #e7ffed;
+    font-size: 0.8rem;
+}
+
+tr:nth-child(2) {
+    background-color: #e7f0ed;
+}
+
+tr:nth-child(4) {
+    background-color: #e7f0ed;
+}
+
+tr:nth-child(6) {
+    background-color: #e7f0ed;
+    text-align: center
 }
 
 td, th {
-  border: 1px solid rgb(190,190,190);
-  padding: 8px 10px;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 8px 9px;
 }
-
-th {
-  background-color: #7fb9c2;
-  font-size: 25px;
-}
-
-tr {
-  background-color: #628ca6;  
-}
-
-td {
-  text-align: center;
-}
-
-tr:nth-child(even) td {
-  background-color: #e7f0ed;
-}
-
-tr:nth-child(odd) td {
-  background-color: #e7ffed;
-}
-
-tfoot {
-  background-color: #7fb9c2;
-  font-size: 13px;
-}
+    
