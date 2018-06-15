@@ -3,11 +3,13 @@ html {
 }
 
 table {
+    font-family: 'Ubuntu', sans-serif;
     border-collapse: collapse;
     border: 2px solid rgb(200, 200, 200);
     letter-spacing: 1px;
     font-size: 1rem;
     text-align: center
+    box-shadow: 5px 5px 10px gray;
 }
 
 thead tr th {
@@ -17,11 +19,19 @@ thead tr th {
 }
 
 
-.outlier, tr:first-child {
+.outlier {
+    background-color: #628ca6;
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+tr:first-child {
     background-color: #628ca6;
     color: white;
     font-size: 1.1rem;
     font-weight: bold;
+    text-align: center;
 }
 
 #italics {
@@ -37,32 +47,44 @@ tr:last-child {
 
 tr:nth-child(3) {
     background-color: #e7ffed;
+    text-align: center;
 }
 
 tr:nth-child(5) {
     background-color: #e7ffed;
+    text-align: center;
 }
 
 tr:nth-child(7) {
     background-color: #e7ffed;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    text-align: center;
 }
 
 tr:nth-child(2) {
     background-color: #e7f0ed;
+    text-align: center;
 }
 
 tr:nth-child(4) {
     background-color: #e7f0ed;
+    text-align: center;
 }
 
 tr:nth-child(6) {
     background-color: #e7f0ed;
-    text-align: center
+    text-align: center;
 }
+
+tbody > tr:nth-child(6) > td:nth-child(1) {
+    font-style: italic;
+}
+
 
 td, th {
     border: 1px solid rgb(190, 190, 190);
     padding: 8px 9px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
 }
-    
+  
