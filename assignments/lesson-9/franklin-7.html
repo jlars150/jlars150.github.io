@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Oracle Weather</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="styles/normalize-7.css">
+    <link rel="stylesheet" href="styles/main-7.css">
+    <link rel="stylesheet" href="styles/medium-7.css">
+    <link rel="stylesheet" href="styles/large-7.css">
+    </head>
+  <body>
+
+    <header>
+      <img src="images/Logo.png" alt="logo">
+      <h1>Oracle Weather</h1>
+      <div class="subheading">Predicting the weather for the Tricity area since 1953</div>
+       <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+    </header>
+
+
+    <nav class='navigation'>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="#">Franklin</a></li>
+        <li><a href="#">Greenville</a></li>
+        <li><a href="#">Springfield</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery-7.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <img class="full-width" src="images/franklin-large.jpeg" alt="Sunny Days" srcset="images/franklin-small.jpeg 540w,
+                              images/franklin-medium.jpeg 922w,
+                              images/franklin-large.jpeg 1500w">
+      <h2>Franklin</h2>
+      <section class="weather-summary">
+        <table>
+          <thead><h3>Weather Summary</h3></thead>
+          <tr>
+            <td>Weather</td>
+            <td>Sunny</td>
+          </tr>
+          <tr class="gray-fill">
+              <td>High</td>
+              <td><span id="temp-high">68</span>&deg;F</td>
+          </tr>
+          <tr>
+            <td>Low</td>
+              <td><span id="temp-low">50</span>&deg;F</td>
+          </tr>
+          <tr class="gray-fill">
+            <td>Precipitation</td>
+            <td>0%</td>
+          </tr>
+          <tr>
+            <td>Wind Speeds</td>
+              <td><span id="windspeed">15</span>MPH</td>
+          </tr>
+          <tr class="gray-fill">
+            <td>Wind Chill</td>
+            <td><span id="windchill"></span>&deg;</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="forecast">
+        <h3>Ten Day Forecast</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Day 1</th>
+              <th>Day 2</th>
+              <th>Day 3</th>
+              <th>Day 4</th>
+              <th>Day 5</th>
+              <th>Day 6</th>
+              <th>Day 7</th>
+              <th>Day 8</th>
+              <th>Day 9</th>
+              <th>Day 10</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>90&deg;F</td>
+              <td>91&deg;F</td>
+              <td>80&deg;F</td>
+              <td>84&deg;F</td>
+              <td>85&deg;F</td>
+              <td>89&deg;F</td>
+              <td>90&deg;F</td>
+              <td>91&deg;F</td>
+              <td>94&deg;F</td>
+              <td>98&deg;F</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <article>
+        <h3>Franklin Breaks Record</h3>
+        <p class="town-article">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <img class="img-article" src="images/hottestday.jpg" alt="Pollen and Allergens">
+      </article>
+
+    </main>
+
+    <footer>
+      <section class="contact">
+        <strong>Oracle Weather</strong><br>
+        999-999-9999<br>
+        123 Main St. Franklin, MU 85354<br>
+        contact@thedomain.com
+      </section>
+      <section class="footer-bar">&copy;2018 | Oracle Weather | <span id="currentdate">Date Placeholder</span>
+      </section>
+    </footer>
+      <script src="scripts/currentdate.js">
+      </script>
+      <script src="scripts/hamburger.js">
+      </script>
+      <script src="scripts/windchill.js">
+      </script>
+  </body>
+</html>

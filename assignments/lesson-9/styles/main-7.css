@@ -12,7 +12,7 @@
 
 body {
   
-  font-size: 24px;
+  font-size: 18px;
   font-family: "Trebuchet MS", 'Helvetica', sans-serif;
   text-align: center;
 }
@@ -141,11 +141,10 @@ footer {
   display: inline;
   padding: 10px;
 }
-article {
-  text-align: left;
-}
+
 article img {
   display: block;
+  width: 48%;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 10px;
@@ -196,8 +195,6 @@ form {
     text-align: left;
 }
 
-
-
 input { 
     margin: 5px 20px; 
     font-size: .8em; 
@@ -211,7 +208,35 @@ fieldset {
     background-color:ghostwhite;
 }
 
+.weather-summary {
+    width: 50%;
+    display: ;
+    float: right;
+  }
 
+section, article, .data {
+	padding: 0.35rem;
+}
 
+section {
+	max-width: 600px;
+	margin: 0.5rem auto;
+	border: 1px solid lightblue;
+	background-color: white;
+	display: grid;
+	grid-template-rows: 1fr;
+}
 
+article, .home {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: .25rem;
+	justify-items: center;
+	align-items: center;
+	grid-auto-flow: dense;
+}
+
+article:nth-child(even) > img{
+	grid-column: 1;
+}
 

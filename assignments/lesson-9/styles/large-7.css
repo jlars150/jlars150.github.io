@@ -1,0 +1,225 @@
+@media only screen and (min-width: 64em) {
+
+  nav button {
+    display: hidden;
+  }
+
+  section.forecast {
+    display: contents;
+    display: block;
+    clear: both;
+    padding-top: 5px;
+  }
+    .forecast * td {
+        text-align: center
+    }
+  * {
+    flex-flow: row wrap;
+  }
+
+  header, nav, main, footer {
+    max-width: 1023px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+    display: block;
+  }
+
+  header {
+    width: 100%;
+    height: 180px;
+  }
+  header h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 2.2rem;
+    top: 15px;
+    left: 0px;
+  }
+
+  header .subheading, header h1, header img {
+    position: static;
+  }
+
+  header img {
+
+  }
+
+  .hamburger {
+    display: none;
+    top: 60px;
+    padding-right: 20px;
+    float: right;
+  }
+
+  header .subheading {
+    top: 55px;
+    left: 0px;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.250rem;
+  }
+  nav {
+    background-color: lightblue ;
+    width: 100%;
+      clear:both
+  }
+  nav button {}
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+  }
+  nav ul li a {
+    display: inline;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  nav ul li.active a {
+    color: darkcyan;
+  }
+  nav ul li a:hover {
+    color: gainsboro;
+  }
+
+  main {
+  }
+
+  .full-width {
+    width: 50%;
+    float:left
+  }
+  main > img {
+      display: block
+  }
+
+
+  .contact {
+  }
+  .footer-bar {
+    padding: 10px;
+    background-color: lightblue;
+  } 
+  footer {
+    clear: both;
+    font-size: .8rem;
+  }
+
+
+  /* my css */
+  .highlow p {
+    display: block;
+    padding: 0 10px;
+    float: right;
+  }
+  article {
+    text-align: left;
+    clear: right;
+  }
+  article p {
+    width: 48%;
+    float: right;
+  }
+  article img {
+    display: inline-block;
+    width: 48%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 10px;
+    float: left;
+  }
+  table {
+    margin: auto;
+  }
+  article h3 {
+    text-align: center;
+  }
+  .images {
+    width: 90%;
+  }
+  .weather-type {
+    font-size: 2.0rem;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 32px;
+    padding: 10px;
+    float: right;
+  }
+  .current {
+    margin: auto;
+    display: table;
+  }
+  .img-article {
+    margin: auto;
+  }
+  .weather-summary {
+    width: 48%;
+    display: inline;
+    float: right;
+  }
+  .weather-summary h3 {
+    margin: 0;
+  }
+
+  .current picture {
+    float: left;
+  }
+
+  .conditions {
+    display: block;
+    clear: both;
+  }
+  /*closing bracket */
+
+  tr img {
+    width: 20px;
+  }
+  td {
+    vertical-align: bottom;
+    width: 10%;
+    text-align: left;
+  }
+  .gray-fill {
+    background-color: lightblue;
+  }
+    
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+    }
+    
+section, article, .data {
+	padding: 0.35rem;
+}
+
+section#frontpagegrid {
+	max-width: 600px;
+	margin: 0.5rem auto;
+	border: 1px solid lightblue;
+	background-color: white;
+	display: grid;
+	grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+article.home {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: .25rem;
+	justify-items: center;
+	align-items: center;
+	grid-auto-flow: dense;
+}
+
+}
